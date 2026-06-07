@@ -19,20 +19,20 @@
         }
 
         :root {
-            --clr-bg: #FCFAF6; /* Kem trắng / Warm Cream */
-            --clr-bg-alt: #F5EFE4; /* Kem cát / Warm Sand */
-            --clr-surface: rgba(255, 255, 255, 0.85); /* Glass card background */
-            --clr-accent-1: #B06A57; /* Rose Terracotta / Mocha Rose */
-            --clr-accent-2: #C88F78; /* Soft Salmon / Blush Apricot */
-            --clr-accent-3: #DBA38C; /* Warm Gold / Champagne */
-            --clr-accent-4: #806053; /* Warm Cocoa */
-            --clr-text: #4E3E37; /* Coffee Gray */
-            --clr-text-muted: #8E7C73; /* Muted Cocoa */
-            --clr-white: #ffffff;
-            --clr-heading: #2D1E17; /* Dark Chocolate */
-            --clr-border: rgba(138, 109, 96, 0.12); /* Subtle mocha border */
-            --clr-glow: rgba(176, 106, 87, 0.15);
-        }
+   	 --clr-bg: #0a192f;           /* Xanh navy cực đậm */
+    	--clr-bg-alt: #112240;       /* Navy nhẹ hơn cho card */
+  	  --clr-surface: rgba(17, 34, 64, 0.9);
+  	  --clr-accent-1: #64ffda;     /* Xanh mint làm điểm nhấn */
+   	 --clr-accent-2: #64ffda;     
+  	  --clr-accent-3: #64ffda;
+  	  --clr-accent-4: #64ffda;
+   	 --clr-text: #8892b0;         /* Xám xanh nhẹ */
+    	--clr-text-muted: #8892b0;
+   	--clr-white: #e6f1ff;        /* Trắng xanh nhẹ cho chữ tiêu đề */
+    	--clr-heading: #ccd6f6;      /* Xám bạc cho heading */
+    	--clr-border: rgba(100, 255, 218, 0.2); 
+    --clr-glow: rgba(100, 255, 218, 0.1);
+}
 
         html {
             scroll-behavior: smooth;
@@ -75,13 +75,13 @@
         }
 
         nav.scrolled {
-            background: rgba(252, 250, 246, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--clr-border);
-            padding: 0.8rem 0;
-            box-shadow: 0 4px 20px rgba(78, 62, 55, 0.02);
-        }
+    	background: rgba(10, 25, 47, 0.85); 
+    	backdrop-filter: blur(20px);
+    	-webkit-backdrop-filter: blur(20px);
+    	border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+    	padding: 0.8rem 0;
+    	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+	}
 
         .nav-inner {
             max-width: 1200px;
@@ -2856,7 +2856,7 @@
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
                         const alpha = (1 - dist/130) * 0.08;
-                        ctx.strokeStyle = `rgba(176, 106, 87, ${alpha})`;
+                        ctx.strokeStyle = `rgba(100, 255, 218, ${alpha})`;
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
                     }
