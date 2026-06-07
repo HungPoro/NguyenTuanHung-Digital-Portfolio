@@ -1911,150 +1911,293 @@
             <p class="doc-p"><strong>VIẾT PROMPT HIỆU QUẢ CHO CÁC TÁC VỤ HỌC TẬP</strong></p>
 <p class="doc-p">Họ và tên sinh viên: Nguyễn Tuấn Hưng</p>
 <p class="doc-p">Mã sinh viên: 25118109</p>
-<p class="doc-p"><strong>Mở đầu: </strong></p>
-<p class="doc-p">Trong thời đại công nghệ số hiện nay, mô hình ngôn ngữ lớn (Large Language Models – LLMs) như Chat GPT đã trở thành công cụ hỗ trợ đắc lực trong nhiều lĩnh vực, đặc biệt là học tâp và nghiên cứu. Việc viết prompt hiệu quả giúp khai thác tối đa khả năng của các mô hình này, từ đó nâng cao chất lượng và hiệu quả học tập. Báo cáo này tập trung phân tích cách xây dựng prompt phù hợp cho các tác vụ học tập phổ biến, thử nghiệm và so sánh kết quả để rút ra các nguyên tắc viết prompt hiệu quả.</p>
-<p class="doc-p"><strong>I. Lựa chọn và phân tích tác vụ học tập.</strong></p>
-<p class="doc-p">Để khai thác tối đa khả năng của mô hình ngôn ngữ lớn trong học tập, tôi đã lựa chọn 3 tác vụ phổ biến và có tính ứng dụng cao:</p>
-<p class="doc-p"><strong>1. Tóm tắt một bài đọc/tài liệu học thuật</strong></p>
-<p class="doc-p"><strong>- Mục tiêu</strong>: Rút gọn nội dung, giữ lại các ý chính để phục vụ ôn tập hoặc nghiên cứu.</p>
-<p class="doc-p"><strong>- Hình thức thực hiện</strong>: Cung cấp văn bản đầu vào, yêu cầu mô hình tạo bản tóm tắt súc tích.</p>
-<p class="doc-p"><strong>2</strong>. <strong>Giải thích một khái niệm phức tạp</strong></p>
-<p class="doc-p"><strong>- Mục tiêu</strong>: Làm rõ nội dung khó hiểu, giúp người học tiếp cận dễ dàng hơn.</p>
-<p class="doc-p"><strong>- Hình thức thực hiện</strong>: Đưa ra khái niệm, yêu cầu mô hình giải thích theo nhiều cấp độ (cơ bản đến nâng cao) hiểu và áp dụng kiến thức.</p>
-<p class="doc-p"><strong>- Hình thức thực hiện</strong>: Đặt câu hỏi cụ thể, yêu cầu mô hình trả lời chính xác và có lập luận.</p>
-<p class="doc-p">II. Xây dựng các phiên bản prompt.</p>
-<p class="doc-p"><strong>Tóm tắt tài liệu học thuật.</strong></p>
-<p class="doc-p"><strong>Prompt cơ bản: </strong>“Tóm tắt văn bản sau”.</p>
-<p class="doc-p">Ví dụ: “Tóm tắt bài báo về bảo vệ môi trường”.</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image1.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image2.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>- Prompt chi tiết: </strong>"Hãy tóm tắt văn bản sau, giữ lại các luận điểm chính, loại bỏ chi tiết phụ."</p>
-<p class="doc-p">Ví dụ: "Tóm tắt bài báo về bảo vệ môi trường, tập trung vào nguyên nhân và hậu quả chính."</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image3.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>- Prompt nâng cao: </strong>"Bạn là một trợ lý học thuật. Hãy tóm tắt văn bản sau theo cấu trúc: 1) Chủ đề chính, 2) Các luận điểm chính, 3) Kết luận."</p>
-<p class="doc-p">Ví dụ: "Bạn là trợ lý học thuật, tóm tắt bài báo về bảo vệ môi trường theo cấu trúc: chủ đề, luận điểm, kết luận."</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image4.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image5.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>Giải thích khái niệm phức tạp</strong></p>
-<p class="doc-p"><strong>Prompt cơ bản: </strong>“giải thích định luật bảo toàn năng lượng”.</p>
-<p class="doc-p">Ví dụ: “Định luật bảo toàn năng lượng là gì?”</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image6.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>Prompt chi tiết:</strong> “giải thích định luật bảo toàn năng lượng trong vật lý, dành cho sinh viên năm nhất’.</p>
-<p class="doc-p">Ví dụ: “Hãy giải thích định luật bảo toàn năng lượng cho sinh viên năm nhất”.</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image7.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>Prompt nâng cao:</strong> “Bạn là giảng viên vật lý. Hãy giải thích định luật bảo toàn năng lượng bằng cách sử dụng ứng dụng thực tế, sau đó liên hệ với các ứng dụng trong đời sống và kĩ thuật”.</p>
-<p class="doc-p">Ví dụ: “giải thích định luật bảo toàn năng lượng với ví dụ về con lắc đơn và ứng dụng trong kĩ thuật năng lượng tái tạo”.</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image8.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div>  <div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image9.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image10.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div> <div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image11.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>Trả lời hỏi đáp.</strong></p>
-<p class="doc-p"><strong>- Prompt cơ bản: </strong>"Trả lời câu hỏi: Tình cảm gia đình là gì?"</p>
-<p class="doc-p">Ví dụ: "Tình cảm gia đình là sự gắn bó và yêu thương giữa các thành viên trong gia đình."</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image12.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>- Prompt chi tiết: </strong>"Giải thích ý nghĩa của tình cảm gia đình trong cuộc sống con người."</p>
-<p class="doc-p">Ví dụ: "Tình cảm gia đình giúp tạo nên sự ổn định tinh thần, hỗ trợ phát triển cá nhân và xây dựng mối  quan hệ xã hội bền vững."</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image13.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>- Prompt nâng cao: </strong>"Bạn là một nhà tâm lý học. Hãy phân tích sâu sắc về vai trò và ảnh hưởng của tình cảm gia đình đối với sự phát triển cá nhân và xã hội."</p>
-<p class="doc-p">Ví dụ: "Tình cảm gia đình đóng vai trò then chốt trong việc hình thành nhân cách, ảnh hưởng đến sức khỏe tâm thần và khả năng thích nghi xã hội của mỗi cá nhân. Nó còn góp phần duy trì các giá trị văn hóa và sự phát triển bền vững của xã hội”.</p>
-<p class="doc-p"><div class="doc-image-container"><img class="doc-image" src="bt3_extracted/media/image14.jpg" alt="Image" /><p class="doc-image-caption">Hình ảnh từ bài tập</p></div></p>
-<p class="doc-p"><strong>III. Thử nghiệm và so sánh kết quả.</strong></p>
-<p class="doc-p">Tôi đã sử dụng<strong> Chat GPT</strong> để thử nghiệm các prompt trên. Dưới đây là bảng so sánh kết quả:</p>
-<div class="doc-table-wrapper"><table class="doc-table">
-<tr>
-<td>Tác vụ</td>
-<td>Phiên bản</td>
-<td>Độ dài đầu ra</td>
-<td>Mức độ chính xác</td>
-<td>Tính logic</td>
-<td>Tính sáng tạo</td>
-</tr>
-<tr>
-<td>Tóm tắt</td>
-<td>Cơ bản</td>
-<td>Ngắn</td>
-<td>Trung bình</td>
-<td>Thấp</td>
-<td>Thấp</td>
-</tr>
-<tr>
-<td>Tóm tắt</td>
-<td>Chi tiết</td>
-<td>Vừa</td>
-<td>Tốt</td>
-<td>Tốt</td>
-<td>Trung bình</td>
-</tr>
-<tr>
-<td>Tóm tắt</td>
-<td>Nâng cao</td>
-<td>Dài </td>
-<td>Rất tốt</td>
-<td>Rất tốt</td>
-<td>Cao </td>
-</tr>
-<tr>
-<td>Giải thích </td>
-<td>Cơ bản</td>
-<td>Ngắn</td>
-<td>Trung bình</td>
-<td>Thấp</td>
-<td>Thấp</td>
-</tr>
-<tr>
-<td>Giải thích</td>
-<td>Chi tiết</td>
-<td>Vừa</td>
-<td>Tốt</td>
-<td>Tốt</td>
-<td>Trung bình</td>
-</tr>
-<tr>
-<td>Giải thích</td>
-<td>Nâng cao</td>
-<td>Dài </td>
-<td>Rất tốt</td>
-<td>Rất tốt</td>
-<td>Cao </td>
-</tr>
-<tr>
-<td>Hỏi đáp</td>
-<td>Cơ bản</td>
-<td>Ngắn</td>
-<td>Trung bình</td>
-<td>Thấp</td>
-<td>Thấp</td>
-</tr>
-<tr>
-<td>Hỏi đáp</td>
-<td>Chi tiết</td>
-<td>Vừa</td>
-<td>Tốt</td>
-<td>Tốt</td>
-<td>Trung bình</td>
-</tr>
-<tr>
-<td>Hỏi đáp</td>
-<td>Nâng cao</td>
-<td>Dài </td>
-<td>Rất tốt</td>
-<td>Rất tốt</td>
-<td>Cao </td>
-</tr>
-</table></div>
-<p class="doc-p"><strong>IV. Phân tích hiệu quả prompt.</strong></p>
-<p class="doc-p">Qua thử nghiệm, tôi nhận thấy:</p>
-<p class="doc-p">Prompt nâng cao tạo ra kết quả chất lượng hơn nhờ vào việc định hướng vai trò và cấu trúc rõ ràng.</p>
-<p class="doc-p">Việc sử dụng kỹ thuật như role prompting giúp mô hình hiểu ngữ cảnh và mục tiêu tốt hơn.</p>
-<p class="doc-p">Prompt có ví dụ (few-shot) giúp mô hình bắt chước cách trả lời chính xác hơn.</p>
-<p class="doc-p">Prompt càng rõ ràng, kết quả càng logic và dễ hiểu.</p>
-<p class="doc-p"><strong>V. Tổng hợp nguyên tắc và trình bày báo cáo.</strong></p>
-<p class="doc-p"><strong> Nguyên tắc viết prompt hiệu quả:</strong></p>
-<p class="doc-p"><strong>Xác định rõ mục tiêu: </strong>Prompt cần thể hiện rõ yêu cầu đầu ra.</p>
-<p class="doc-p"><strong>Định hướng vai trò: </strong>Sử dụng role prompting để mô hình hiểu vai trò của mình.</p>
-<p class="doc-p"><strong>Cấu trúc rõ ràng:</strong> chia nhỏ yêu cầu theo từng bước hoặc mục.</p>
-<p class="doc-p"><strong>Cung cấp ví dụ: </strong>Nếu có thể, đưa ra ví dụ để mô hình học theo.</p>
-<p class="doc-p"><strong>Ngôn ngữ cụ thể:</strong> Tránh dung từ mơ hồ, nên dung từ ngữ chính xác.</p>
-<p class="doc-p"><strong>VI. Kết luận.</strong></p>
-<p class="doc-p">Việc viết prompt hiệu quả đóng vai trò then chốt trong việc khai thác tối đa tiềm năng của các mô hình ngôn ngữ lớn trong học tập và nghiên cứu. Qua báo cáo này, có thể thấy rằng prompt càng chi tiết, rõ ràng và có định hướng vai trò cụ thể thì kết quả trả về càng chính xác, logic và sáng tạo hơn. Việc áp dụng các nguyên tắc như xác định mục tiêu rõ ràng, cấu trúc mạch lạc, cung cấp ví dụ minh họa và sử dụng ngôn ngữ cụ thể giúp nâng cao hiệu quả giao tiếp với mô hình.</p>
-<p class="doc-p">Ngoài ra, thử nghiệm cho thấy prompt nâng cao không chỉ cải thiện chất lượng nội dung mà còn giúp người học phát triển tư duy phản biện và khả năng phân tích sâu sắc hơn. Do đó, việc đầu tư thời gian và công sức để xây dựng prompt phù hợp là rất cần thiết cho các tác vụ học tập hiện đại.</p>
-<p class="doc-p">Hy vọng báo cáo này sẽ là tài liệu tham khảo hữu ích cho việc ứng dụng AI trong học tập, đồng thời góp phần nâng cao kỹ năng viết prompt cho người học và nhà nghiên cứu.</p>
+<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px;">
+    <h2 style="text-align: center; text-transform: uppercase;">VIẾT PROMPT HIỆU QUẢ CHO CÁC TÁC VỤ HỌC TẬP[cite: 6]</h2>
+    <p><strong>Họ và tên sinh viên:</strong> Nguyễn Tuấn Hưng[cite: 6]</p>
+    <p><strong>Mã sinh viên:</strong> 25118109[cite: 6]</p>
+    
+    <h3 style="text-align: center;">Báo cáo[cite: 6]</h3>
+
+    <h4>I. Mục tiêu:[cite: 6]</h4>
+    <p>Phát triển kỹ năng viết prompt hiệu quả để tận dụng tối đa khả năng của các mô hình ngôn ngữ lớn trong học tập.[cite: 6]</p>
+
+    <h4>II. Lựa chọn yêu cầu:[cite: 6]</h4>
+    <p>1. Chọn 3 tác vụ học tập phổ biến:[cite: 6]</p>
+    <ul>
+        <li>Tóm tắt một bài đọc/tài liệu học thuật[cite: 6]</li>
+        <li>Giải thích một khái niệm phức tạp[cite: 6]</li>
+        <li>Tạo bộ câu hỏi ôn tập cho một chủ đề[cite: 6]</li>
+    </ul>
+    
+    <p>2. Cho mỗi tác vụ, viết 3 phiên bản prompt khác nhau:[cite: 6]</p>
+    <ul>
+        <li>Prompt cơ bản (đơn giản, ngắn gọn)[cite: 6]</li>
+        <li>Prompt cải tiến (chi tiết hơn, có cấu trúc)[cite: 6]</li>
+        <li>Prompt nâng cao (áp dụng các kỹ thuật prompt engineering như role prompting, chain-of-thought, few-shot examples)[cite: 6]</li>
+    </ul>
+
+    <p>3. Thử nghiệm các prompt với một công cụ AI (như ChatGPT) và so sánh kết quả.[cite: 6]</p>
+    <p>4. Phân tích lý do tại sao một số prompt hiệu quả hơn các prompt khác.[cite: 6]</p>
+    <p>5. Tổng hợp các nguyên tắc và mẹo viết prompt hiệu quả dựa trên kết quả thử nghiệm.[cite: 6]</p>
+
+    <h4>III. Thực hành:[cite: 6]</h4>
+    
+    <p><strong>1. Tóm tắt tài liệu học thuật.</strong>[cite: 6]</p>
+    <ul>
+        <li>Prompt cơ bản: “Tóm tắt văn bản sau”.[cite: 6]</li>
+    </ul>
+    <p>Ví dụ: “Tóm tắt bài báo về bảo vệ môi trường”.[cite: 6]</p>
+    
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image1.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image2.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <ul>
+        <li>Prompt chi tiết: "Hãy tóm tắt văn bản sau, giữ lại các luận điểm chính, loại bỏ chi tiết phụ."[cite: 6]</li>
+    </ul>
+    <p>Ví dụ: "Tóm tắt bài báo về bảo vệ môi trường, tập trung vào nguyên nhân và hậu quả chính."[cite: 6]</p>
+
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image3.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <ul>
+        <li>Prompt nâng cao: "Bạn là một trợ lý học thuật. Hãy tóm tắt bài báo theo cấu trúc: 1) Chủ đề chính, 2) Các luận điểm chính, 3) Kết luận."[cite: 6]</li>
+    </ul>
+
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image4.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image5.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <p><strong>2. Giải thích khái niệm phức tạp</strong>[cite: 6]</p>
+    <ul>
+        <li>Prompt cơ bản: “Định luật bảo toàn năng lượng là gì?”.[cite: 6]</li>
+    </ul>
+
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image6.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image7.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image8.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <ul>
+        <li>Prompt chi tiết: “Hãy giải thích định luật bảo toàn năng lượng cho sinh viên năm nhất”[cite: 6]</li>
+    </ul>
+
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image9.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image10.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image11.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image12.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <ul>
+        <li>Prompt nâng cao: “Bạn là giảng viên vật lý. Hãy giải thích định luật bảo toàn năng lượng bằng cách sử dụng ứng dụng thực tế, sau đó liên hệ với các ứng dụng trong đời sống và kĩ thuật”[cite: 6]</li>
+    </ul>
+
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image13.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image14.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image15.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <p><strong>3. Trả lời hỏi đáp.</strong>[cite: 6]</p>
+    <ul>
+        <li>Prompt cơ bản: "Trả lời câu hỏi: Tình cảm gia đình là gì?"[cite: 6]</li>
+    </ul>
+
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image16.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image17.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image18.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <ul>
+        <li>Prompt chi tiết: "Giải thích ý nghĩa của tình cảm gia đình trong cuộc sống con người."[cite: 6]</li>
+    </ul>
+
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image19.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image20.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <ul>
+        <li>Prompt nâng cao: "Bạn là một nhà tâm lý học. Hãy phân tích sâu sắc về vai trò và ảnh hưởng của tình cảm gia đình đối với sự phát triển cá nhân và xã hội. “[cite: 6]</li>
+    </ul>
+
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image21.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image22.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="bt3_extracted/media/image23.png" alt="Image" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+        <p style="font-size: 0.9em; font-style: italic; color: #666;">Hình ảnh từ bài tập</p>
+    </div>
+
+    <h4>III. Thử nghiệm và so sánh kết quả.[cite: 6]</h4>
+    <p>Tôi đã sử dụng GEMINI để thử nghiệm các prompt trên. Dưới đây là bảng so sánh kết quả:[cite: 6]</p>
+
+    <table border="1" style="border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 20px;">
+        <thead style="background-color: #f2f2f2;">
+            <tr>
+                <th style="padding: 8px;">Tác vụ[cite: 6]</th>
+                <th style="padding: 8px;">Phiên bản[cite: 6]</th>
+                <th style="padding: 8px;">Độ dài đầu ra[cite: 6]</th>
+                <th style="padding: 8px;">Mức độ chính xác[cite: 6]</th>
+                <th style="padding: 8px;">Tính logic[cite: 6]</th>
+                <th style="padding: 8px;">Tính sáng tạo[cite: 6]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 8px;">Tóm tắt[cite: 6]</td>
+                <td style="padding: 8px;">Cơ bản[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Tóm tắt[cite: 6]</td>
+                <td style="padding: 8px;">Chi tiết[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Tóm tắt[cite: 6]</td>
+                <td style="padding: 8px;">Nâng cao[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Giải thích[cite: 6]</td>
+                <td style="padding: 8px;">Cơ bản[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Giải thích[cite: 6]</td>
+                <td style="padding: 8px;">Chi tiết[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Giải thích[cite: 6]</td>
+                <td style="padding: 8px;">Nâng cao[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Hỏi đáp[cite: 6]</td>
+                <td style="padding: 8px;">Cơ bản[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Hỏi đáp[cite: 6]</td>
+                <td style="padding: 8px;">Chi tiết[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+                <td style="padding: 8px;">Trung bình[cite: 6]</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Hỏi đáp[cite: 6]</td>
+                <td style="padding: 8px;">Nâng cao[cite: 6]</td>
+                <td style="padding: 8px;">Dài[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+                <td style="padding: 8px;">Cao[cite: 6]</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>IV. Phân tích hiệu quả prompt.[cite: 6]</h4>
+    <p>Qua thử nghiệm, tôi nhận thấy:[cite: 6]</p>
+    <ul>
+        <li>Prompt nâng cao tạo ra kết quả chất lượng hơn nhờ vào việc định hướng vai trò và cấu trúc rõ ràng.[cite: 6]</li>
+        <li>Việc sử dụng kỹ thuật như role prompting giúp mô hình hiểu ngữ cảnh và mục tiêu tốt hơn.[cite: 6]</li>
+        <li>Prompt có ví dụ (few-shot) giúp mô hình bắt chước cách trả lời chính xác hơn.[cite: 6]</li>
+        <li>Prompt càng rõ ràng, kết quả càng logic và dễ hiểu.[cite: 6]</li>
+    </ul>
+
+    <h4>V. Tổng hợp nguyên tắc và trình bày báo cáo.[cite: 6]</h4>
+    <p>Nguyên tắc viết prompt hiệu quả:[cite: 6]</p>
+    <ol>
+        <li>Xác định rõ mục tiêu: Prompt cần thể hiện rõ yêu cầu đầu ra.[cite: 6]</li>
+        <li>Định hướng vai trò: Sử dụng role prompting để mô hình hiểu vai trò của mình.[cite: 6]</li>
+        <li>Cấu trúc rõ ràng: chia nhỏ yêu cầu theo từng bước hoặc mục.[cite: 6]</li>
+        <li>Cung cấp ví dụ: Nếu có thể, đưa ra ví dụ để mô hình học theo.[cite: 6]</li>
+        <li>Ngôn ngữ cụ thể: Tránh dùng từ mơ hồ, nên dùng từ ngữ chính xác.[cite: 6]</li>
+    </ol>
+
+    <h4>VI. Kết luận.[cite: 6]</h4>
+    <p>Việc viết prompt hiệu quả đóng vai trò then chốt trong việc khai thác tối đa tiềm năng của các mô hình ngôn ngữ lớn trong học tập và nghiên cứu.[cite: 6] Qua báo cáo này, có thể thấy rằng prompt càng chi tiết, rõ ràng và có định hướng vai trò cụ thể thì kết quả trả về càng chính xác, logic và sáng tạo hơn.[cite: 6] Việc áp dụng các nguyên tắc như xác định mục tiêu rõ ràng, cấu trúc mạch lạc, cung cấp ví dụ minh họa và sử dụng ngôn ngữ cụ thể giúp nâng cao hiệu quả giao tiếp với mô hình.[cite: 6]</p>
+    <p>Ngoài ra, thử nghiệm cho thấy prompt nâng cao không chỉ cải thiện chất lượng nội dung mà còn giúp người học phát triển tư duy phản biện và khả năng phân tích sâu sắc hơn.[cite: 6] Do đó, việc đầu tư thời gian và công sức để xây dựng prompt phù hợp là rất cần thiết cho các tác vụ học tập hiện đại.[cite: 6]</p>
+    <p>Hy vọng báo cáo này sẽ là tài liệu tham khảo hữu ích cho việc ứng dụng AI trong học tập, đồng thời góp phần nâng cao kỹ năng viết prompt cho người học và nhà nghiên cứu.[cite: 6]</p>
+</div>
         </div>
         <div id="content-bt4">
             <p class="doc-p"><strong>BÁO CÁO THỰC HÀNH: ỨNG DỤNG CÔNG CỤ CÔNG NGHỆ TRỰC TUYẾN TRONG QUẢN LÝ DỰ ÁN VÀ CỘNG TÁC NHÓM HIỆU QUẢ</strong></p>
